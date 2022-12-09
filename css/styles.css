@@ -42,7 +42,13 @@ img {
 }
 
 .hero-background{
-    border-corner-image: url();
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
 }
 
 .section{
