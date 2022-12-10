@@ -7,6 +7,7 @@
     --secondary-background: #2f303a;
     --black-logo: #000;
     --button-background: #f5f4fa;
+    --color-icon: #AFB1B8;
 }
 body {
     color: var(--color-primary);
@@ -145,6 +146,17 @@ img {
 
 .contact {
     color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+}
+
+.icon-header{
+    margin-right: 10px;
+}
+
+.icon-header:hover, .icon-header:focus{
+    fill: currentColor;
 }
 
 .link:hover,
@@ -193,6 +205,16 @@ img {
 .advantages-item{
     flex-basis: calc((100%-90px)/4);
     min-width: 270px;
+}
+
+.advantages-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--button-background);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .filter {
@@ -276,7 +298,28 @@ img {
 .text {
     color: var(--color-secondary);
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+}
+
+.social-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon:hover, .social-icon:focus{
+    fill: var(--white-accent);
+    background-color: var(--color-accent);
+    border-radius: 50%;
 }
 
 .work{
