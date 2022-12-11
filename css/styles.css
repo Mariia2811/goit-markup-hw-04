@@ -245,8 +245,8 @@ img {
 }
 
 .advantages,
-.work {
-    background-color: var(--color-background);
+.work, .clients {
+    background-color: var(--color-background); 
 }
 
 .advantages-title {
@@ -307,13 +307,26 @@ img {
     justify-content: center;
 }
 
-.social-icon{
+.icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--color-icon);
     width: 44px;
     height: 44px;
+}
+
+.social-icon{
+    fill: var(--color-icon);
+}
+
+.footer-icon{
+    fill: var(--white-accent);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon:hover, .footer-icon:focus{
+    background-color: var(--color-accent);
 }
 
 .social-icon:hover, .social-icon:focus{
@@ -347,6 +360,27 @@ img {
     gap: 30px;
 }
 
+.clients-list{
+    display: flex;
+    gap: 30px;
+}
+
+.clients-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-icon);
+    fill: var(--color-icon);
+    border-radius: 4px;
+}
+
+.clients-icon:hover, .clients-icon:focus{
+    fill: var(--color-accent);
+    border: 1px solid var(--color-accent)
+}
+
 .filter-list{
     margin-bottom: 50px;
     display: flex;
@@ -360,9 +394,26 @@ img {
     gap: 30px;
 }
 
+.portfolio-link{
+    text-decoration: inherit;
+    color: inherit;
+    display: block;
+}
+
+.portfolio-link:hover, .portfolio-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .footer {
     background-color: var(--secondary-background);
     padding: 60px 0;
+    display: flex;
+}
+
+.footer-conteiner{
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
 }
 
 .address,
@@ -385,4 +436,11 @@ img {
 
 .footer-list:not(:last-child){
     margin-bottom: 12px;
+}
+
+.footer-description{
+    color: var(--white-accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
